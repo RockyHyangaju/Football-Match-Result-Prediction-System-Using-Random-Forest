@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Cup 2026 Prediction</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-brand">World Cup 2026</a>
+      <div class="nav-links">
+        <a class="nav-link" href="#landing">Home</a>
+        <a class="nav-link" href="#teamsSection">Teams</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Landing Page -->
+  <section class="landing-page" id="landing">
+    <div class="hero-section">
+      <div class="hero-content">
+        <div class="text-container">
+          <h1 class="hero-title">FEEL THE MAGIC IN THE AIR!! 2026</h1>
+          <p class="hero-subtitle">Select your teams and Start prediction.</p>
+          <button id="showTeamsBtn" class="hero-btn">Show Teams</button>
+        </div>
+        <div class="video-container">
+          <video autoplay muted loop>
+            <source src="./VIDEOS/F1.mp4" type="video/mp4">
+          </video>
+          <div class="video-overlay"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teams List -->
+  <section id="teamsSection" class="teams-table">
+    <h2>All 48 Teams</h2>
+    <div id="teamsGrid" class="teams-grid"></div>
+    <button id="createGroupsBtn" class="btn btn-primary" style="margin-top:1rem;">Create Groups</button>
+  </section>
+
+  <!-- Group Tables Section -->
+  <section id="groupsSection" class="selection-area" style="display:none;">
+    <h2>Group Stage - Drag & Drop Teams</h2>
+    <div class="button-group">
+      <button id="randomSelectBtn" class="btn btn-primary">Random Select</button>
+      <button id="resetGroupsBtn" class="btn btn-secondary">Reset Selection</button>
+    </div>
+
+    <div class="group-stage-container">
+      <div id="teamsScroll" class="teams-scroll">
+        <h3>Available Teams</h3>
+        <div id="availableTeamsGrid" class="teams-grid"></div>
+      </div>
+
+      <div id="groupContainer" class="groups-compact">
+        <div class="groups-grid-compact">
+          <div class="group-table" id="groupA"><h4>Group A</h4></div>
+          <div class="group-table" id="groupB"><h4>Group B</h4></div>
+          <div class="group-table" id="groupC"><h4>Group C</h4></div>
+          <div class="group-table" id="groupD"><h4>Group D</h4></div>
+          <div class="group-table" id="groupE"><h4>Group E</h4></div>
+          <div class="group-table" id="groupF"><h4>Group F</h4></div>
+          <div class="group-table" id="groupG"><h4>Group G</h4></div>
+          <div class="group-table" id="groupH"><h4>Group H</h4></div>
+          <div class="group-table" id="groupI"><h4>Group I</h4></div>
+          <div class="group-table" id="groupJ"><h4>Group J</h4></div>
+          <div class="group-table" id="groupK"><h4>Group K</h4></div>
+          <div class="group-table" id="groupL"><h4>Group L</h4></div>
+        </div>
+      </div>
+    </div>
+
+    <button id="startTournamentBtn" class="btn btn-primary">Start Tournament Simulation</button>
+  </section>
+
+  <!-- Results Section -->
+  <section id="resultsSection" class="bracket-container" style="display:none;">
+    <h2 class="bracket-title">Tournament Results</h2>
+
+    <div class="champion-display">
+      <div id="championSlot" class="champion-slot">
+        <div id="championName" class="result-name"></div>
+      </div>
+    </div>
+
+    <div class="runner-third-display">
+      <div id="runnerUpSlot" class="champion-slot">
+        <h4>Runner-Up</h4>
+        <div id="runnerUpName" class="result-name"></div>
+      </div>
+      <div id="thirdPlaceSlot" class="champion-slot">
+        <h4>Third Place</h4>
+        <div id="thirdPlaceName" class="result-name"></div>
+      </div>
+    </div>
+
+    <div id="knockoutStages" class="knockout-container">
+      <h3>Knockout Progression</h3>
+      <div id="round32Container"></div>
+      <div id="round16Container"></div>
+      <div id="quarterContainer"></div>
+      <div id="semiContainer"></div>
+      <div id="finalContainer"></div>
+    </div>
+
+    <div class="tournament-result" style="display:none;">
+      <div id="winnerSlot" class="winner">Winner</div>
+      <div id="runnerUpSlotFinal" class="runner-up">Runner-Up</div>
+      <div id="thirdPlaceSlotFinal" class="third-place">3rd Place</div>
+    </div>
+
+    <!-- Return to Group Stage Button -->
+    <div style="text-align:center; margin-top:2rem;">
+      <button id="returnToGroupsBtn" class="btn btn-secondary">Return to Group Stage</button>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 FIFA World Cup Simulator | Copy right by Rocky
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
